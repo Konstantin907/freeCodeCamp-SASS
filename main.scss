@@ -1,0 +1,116 @@
+@mixin heading-display{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+$font: Arial;
+
+html{
+    background-color: white;
+    margin-inline-end: 0.5rem;
+}
+body{
+    background-color: #eeeeee;
+   scroll-margin-inline-end: 3rem; 
+   margin-inline-start: 0.5rem;
+}
+
+.header-div{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+    h1{
+        padding: 45px;
+        @include heading-display;
+        font-size: 40px;
+        margin-top: 40px;
+        
+    }
+    p{
+        padding-bottom: 15px;
+        @include heading-display;
+        margin-top: -20px;
+    }
+}
+
+.img-div{
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-inline-start: 1rem;
+    margin-inline: 1rem;
+    margin-inline-end: 1rem;
+    img{
+        @include heading-display;
+        max-width: 100%;
+        width: 80%;
+    }
+    .img-only{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    figcaption{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+   
+}
+
+    
+h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+
+
+.ul-and-li-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    ul{
+        width: 50%;
+      font-family: $font; 
+      padding: 10px;
+        
+}
+    
+}
+.last-para{ 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+.last-p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: medium;
+    max-width: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ }
+ .link-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    .link-a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+ }
